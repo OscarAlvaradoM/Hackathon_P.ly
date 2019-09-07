@@ -1,0 +1,44 @@
+
+				API Account
+
+Permite crear una cuenta digital, donde se recopilarán sus datos básicos
+directamente desde la app. 
+Permite la potenciación de negocios
+
+Ventajas:
+	- Transacciones sin tarjeta (Desde Movil), ya sean pagos, transferencias, 
+	   retiros, movimientos.
+	- No existen comisiones por apertura, manejo, membresía o saldo mínimo
+
+Documentación
+	Esta api nos permite crear cuentas por parte de aplicaciones de terceros
+	que no sean clientes. Primero, deberemos registrarnos en API CUSTOMERS, 
+	donde básicamente es el registro, posteriormente, hacemos uso de API Security
+	para generar una contraseña de un solo uso (OTP).
+	Es posible que se requieran datos iniciales que puedan modificarse en un futuro
+	Posee un ambiente de pruebas, para hacer uso de este ambiente, es necesario
+	descargar una "collecion", importara y usar una API REST como postman. Nuevamente
+	NEcesitaremos una autorización usando"O.Authentication", en caso de obtenerla
+	podemos modificar los valores para obtener diversos resultados
+	
+Haciendo uso de la API
+	Nos registramos en https://www.bbvaapimarket.com ingresamos, Seleccionamos 
+	nuestra cuenta (Arriba a la derecha) y damos clic en la opción "Mis Apps"
+	una vez ahí dentro, seleccionamos "crear aplicación", donde ingresaremos
+	el nombre, así como el entorno, el id y la descripción. Posteriormente,
+	procedemos a seleccionar las APIs a usar dentro de nuestra app.
+
+
+Notitas:
+	- Se hace uso de RAML, el cual es un lenguaje de definicion de apis, estará
+	encargado de especificar correctamente todos los aspectos a definir en una api
+	(Version, métodos, recursos, ejemplos, etc.)
+
+	- Los alcances de la api se ven asociados a "OAuth", la cual es un protocolo 
+	abierto, que permite una autorización segura de una API. 
+	Es decir, puedes Accesar por medio de otra instancia sin 
+	otorgarle TODOS nuestros datos, es decir, podemos definir los datos 
+	que vamos a otorgar a la aplicación que accesamos.
+	El acceso sin OAuth, sería un acceso directo, sin embargo, tiene la desventaja
+	que al existir una vulnerabilidad y ser hackeada la app, nuestros datos
+	de igual forma serán robados.
