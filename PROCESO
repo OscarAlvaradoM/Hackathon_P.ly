@@ -1,0 +1,5 @@
+1) Adquirir dataset (LISTO).
+1.5) Dar funcionalidad a entrada de datos. Esto es, que puedas ingresar tus egresos/ingresos al programa y los reconozca como parte del dataset CORRECTAMENTE.
+2) Clasificador. Metes una empresa y te saca su clasificación (Esto podria hacerse por PCA a 5 variables y luego VSM).
+3) Modelado de empresa x clasificacion. 
+4) TBA
