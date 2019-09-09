@@ -214,7 +214,6 @@ for k in range(len(dic1)):
     if len(b) < maxi:
         for m in range(maxi - len(b)):
             b.append(0)
-dic1 = 
 frame_dat = pd.DataFrame(dic1)
 frame_dat.to_csv(r'/home/oscar/Dropbox/Ciencia_de_Datos/Hackathon/Interface/tienda_real.csv', index = False)
 
